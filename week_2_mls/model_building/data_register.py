@@ -1,5 +1,5 @@
 from huggingface_hub import HfApi,create_repo
-from huggingface_hub.utils import RegistoryNotFoundError,HfHubHTTPError
+from huggingface_hub.utils import RepositoryNotFoundError,HfHubHTTPError
 import os
 
 repo_id="Harsha1001/Machine-Failure-Prediction"
