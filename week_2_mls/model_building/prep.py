@@ -30,5 +30,10 @@ y_test.to_csv("ytest.csv",index=False)
 
 files=["xtrain.csv","ytrain.csv","xtest.csv",'ytest.csv']
 
-for file in files:
-  api.upload_file++
+for file_path in files:
+  api.upload_file(
+        path_or_fileobj=file_path,
+        path_in_repo=file_path.split("/")[-1],  # just the filename
+        repo_id="Harsha1001/Machine-Failure-Prediction",
+        repo_type="dataset",
+    )
