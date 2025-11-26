@@ -66,14 +66,14 @@ model_pipeline = make_pipeline(preprocessor, xgb_model)
 
 # Grid search with cross-validation
 grid_search = GridSearchCV(model_pipeline, param_grid, cv=5, scoring='recall', n_jobs=-1)
-grid_search.fit(Xtrain, ytrain)
+grid_search.fit(xtrain, ytrain)
 
 # Best model
 best_model = grid_search.best_estimator_
 print("Best Params:\n", grid_search.best_params_)
 
 # Predict on training set
-y_pred_train = best_model.predict(Xtrain)
+y_pred_train = best_model.predict(xtrain)
 
 # Predict on test set
 y_pred_test = best_model.predict(Xtest)
