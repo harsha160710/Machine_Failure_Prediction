@@ -36,7 +36,7 @@ categorical_features = ['Type']
 
 
 # Class weight to handle imbalance
-class_weight = y_train.value_counts()[0] / y_train.value_counts()[1]
+#class_weight = y_train.value_counts()[0] / y_train.value_counts()[1]
 
 # Preprocessing pipeline
 preprocessor = make_column_transformer(
@@ -45,7 +45,7 @@ preprocessor = make_column_transformer(
 )
 
 # Define XGBoost model
-xgb_model = xgb.XGBClassifier(scale_pos_weight=class_weight, random_state=42)
+xgb_model = xgb.XGBClassifier(random_state=42)
 
 # Define hyperparameter grid
 param_grid = {
