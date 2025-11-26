@@ -17,8 +17,8 @@ from huggingface_hub.utils import RepositoryNotFoundError, HfHubHTTPError
 
 api = HfApi()
 
-Xtrain_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/Xtrain.csv"
-Xtest_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/Xtest.csv"
+Xtrain_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/xtrain.csv"
+Xtest_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/xtest.csv"
 ytrain_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/ytrain.csv"
 ytest_path = "hf://datasets/Harsha1001/Machine-Failure-Prediction/ytest.csv"
 
