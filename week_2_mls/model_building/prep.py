@@ -7,7 +7,7 @@ from sklearn.preprocessing import LabelEncoder
 from huggingface_hub import login,HfApi
 
 api=HfApi(token=os.getenv('HF_TOKEN'))
-dataset_path="week_2_mls/data/machine-failure-prediction.csv"
+dataset_path="week_2_mls/data/bank_customer_churn (1).csv"
 df=pd.read_csv(dataset_path)
 print("Dataset loaded successfully")
 
